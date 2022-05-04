@@ -1,5 +1,7 @@
 import express from 'express'
-import bodyParser from 'body-parser'
+import { request } from "http";
+import ClienteController from './controllers/cliente-controller';
+import AlunoDAO from './DAO/AlunoDao';
 import router, { Router } from '../TeamTasks/controllers/routers'
 
 const app = express();
