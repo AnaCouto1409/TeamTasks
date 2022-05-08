@@ -4,9 +4,9 @@ export default class AlunoDAO {
         this.db = db;
     }
 
-    async selectAluno() {
+    async listarAluno() {
         return await new Promise((resolve, reject) => {
-            this.db.all(`SELECT * FROM Funcionario`, (error, result) => {
+            this.db.all(`SELECT * FROM Aluno`, (error, result) => {
                 if (error) {
                     return reject(error);
                 } else {
@@ -16,9 +16,9 @@ export default class AlunoDAO {
         })
     }
 
-    async selectFuncionario(id) {
+    async selectAluno(id) {
         return await new Promise((resolve, reject) => {
-            this.db.get(`SELECT * FROM Funcionario WHERE ID = ?`, [id], (error, result) => {
+            this.db.get(`SELECT * FROM Aluno WHERE ID = ?`, [id], (error, result) => {
                 if (error) {
                     reject(error);
                 } else {
@@ -28,37 +28,37 @@ export default class AlunoDAO {
         })
     }
 
-    async insertFuncionario(funcionario) {
+    async insertAluno(funcionario) {
         return await new Promise((resolve, reject) => {
-            this.db.run(`INSERT INTO Funcionario (nome, cpf, idade, cargo, telefone) VALUES (?,?,?,?,?)`, [funcionario.nome, funcionario.cpf, funcionario.idade, funcionario.cargo, funcionario.telefone], error => {
+            this.db.run(`INSERT INTO Aluno (nome, cpf, idade, ocupacao, telefone) VALUES (?,?,?,?,?)`, [nome.nome, nome.cpf, nome.idade, aluno.ocupacao, aluno.telefone], (error) => {
                 if (error) {
                     reject(error);
                 } else {
-                    resolve(`Funcionário inserido com sucesso`);
+                    resolve(`Aluno inserido com sucesso`);
                 }
             })
         })
     }
 
-    async updateFuncionario(funcionario) {
+    async updateAluno(funcionario) {
         return await new Promise((resolve, reject) => {
-            this.db.run(`UPDATE Funcionario SET nome = ?, cpf = ?, idade = ?, cargo = ?, telefone = ? WHERE id = ?`, [funcionario.nome, funcionario.cpf, funcionario.idade, funcionario.cargo, funcionario.telefone, funcionario.id], error => {
+            this.db.run(`UPDATE Aluno SET nome = ?, cpf = ?, idade = ?, ocupacao = ?, telefone = ? WHERE id = ?`, [aluno.nome, aluno.cpf, aluno.idade, aluno.ocupacao, aluno.telefone, aluno.id], (error) => {
                 if (error) {
                     reject(error);
                 } else {
-                    resolve(`Funcionário atualizado com sucesso`);
+                    resolve(`Aluno atualizado com sucesso`);
                 }
             })
         })
     }
 
-    async deleteFuncionario(id) {
+    async deleteAluno(id) {
         return await new Promise((resolve, reject) => {
-            this.db.run(`DELETE FROM Funcionario WHERE ID = ?`, [id], error => {
+            this.db.run(`DELETE FROM Aluno WHERE ID = ?`, [id], (error) => {
                 if (error) {
                     reject(error);
                 } else {
-                    resolve(`Funcionário removido com sucesso`);
+                    resolve(`Aluno removido com sucesso`);
                 }
             })
         })

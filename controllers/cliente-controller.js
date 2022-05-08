@@ -3,6 +3,7 @@ import db from '../infra/clientes';
 import clientes from '../controllers/cliente-controller';
 import AlunosDAO from '../DAO/controller-alunos.js';
 import res from 'express/lib/response.js';
+import fetch from 'node-fetch';
 
 const clienteDAO = new ClienteDAO(db);
 
