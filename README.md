@@ -11,10 +11,7 @@
  
  # Como usar
  
- * Clonar o repositório:
- ```
- $git clone https://github.com/GuilhermeSantiago25/ProjetoM4-AP-Rest.git
- ```
+
  * Instalar pacotes (dependências)
 
 ```
