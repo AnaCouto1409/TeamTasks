@@ -64,14 +64,18 @@ periodo":"teste","admissao":"1000/02/20"
 ```
 Segue o financeiro atualizado pela a rota:
 
-[{"id_financeiro":2,
+[
+
+{"id_financeiro":2,
 "descricao":"teste",
 "entrada":123,"saida":123,
 "validacao":123},
 {"id_financeiro":3,
 "descricao":"teste",
 "entrada":123,"saida":123,
-"validacao":123}]
+"validacao":123}
+
+]
 ```
 
 # Colaboradores
