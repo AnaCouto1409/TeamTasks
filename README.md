@@ -64,7 +64,22 @@ periodo":"teste","admissao":"1000/02/20"
 
 }
 ```
+https://projeto-m4.herokuapp.com/financeiro
+[
 
+{"id_financeiro":2,
+"descricao":"teste",
+"entrada":123,"saida":123,
+"validacao":123"
+},
+
+"id_financeiro":3,
+"descricao":"teste",
+"entrada":123,
+"saida":123,
+"validacao":123
+}
+]
 
 
 # Colaboradores
