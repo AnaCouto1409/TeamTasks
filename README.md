@@ -50,7 +50,9 @@ exemplo de rota get com parametros ('/'rota/id)
 ```
 segue o funcionarios atualizado pelo insomnia
 
-https://projeto-m4.herokuapp.com/funcionarios:
+https://projeto-m4.herokuapp.com/funcionarios
+
+
 
 {
 {"id_funcionario":4,
