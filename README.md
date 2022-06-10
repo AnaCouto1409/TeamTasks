@@ -46,18 +46,32 @@ https://projeto-m4.herokuapp.com/alunos
 	}
 ```
 exemplo de rota get com parametros ('/'rota/id)
+
 ```
-https://projeto-m4.herokuapp.com/funcionarios/2
+segue o funcionarios atualizado pelo insomnia
+
+https://projeto-m4.herokuapp.com/funcionarios:
+
 {
-	"id_funcionario": 2,
-	"nome_completo": "teste",
-	"email": "teste",
-	"celular": 123,
-	"cargo": "teste",
-	"bairro": "teste",
-	"periodo": "teste",
-	"admissao": "1000/02/20"
+{"id_funcionario":4,
+"nome_completo":"Valdery",
+"email":"val@gmail.com","celular":123,
+"cargo":"professor",
+"bairro":"teste","
+periodo":"teste","admissao":"1000/02/20"
+
 }
+```
+Segue o financeiro atualizado pela a rota:
+
+[{"id_financeiro":2,
+"descricao":"teste",
+"entrada":123,"saida":123,
+"validacao":123},
+{"id_financeiro":3,
+"descricao":"teste",
+"entrada":123,"saida":123,
+"validacao":123}]
 ```
 
 # Colaboradores
