@@ -85,3 +85,6 @@ https://projeto-m4.herokuapp.com/financeiro
 # Colaboradora
 Ana Carolina Ribeiro da Silva Couto
 
+#Operações CRUD-API
+Feito em  React
+
