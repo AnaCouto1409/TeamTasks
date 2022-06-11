@@ -82,6 +82,6 @@ https://projeto-m4.herokuapp.com/financeiro
 ]
 
 
-# Colaboradores
+# Colaboradora
 Ana Carolina Ribeiro da Silva Couto
 
