@@ -53,6 +53,8 @@ segue o funcionarios atualizado pelo insomnia
 https://projeto-m4.herokuapp.com/funcionarios
 
 
+https://projeto-m4.herokuapp.com/funcionarios/2
+
 
 {
 {"id_funcionario":4,
