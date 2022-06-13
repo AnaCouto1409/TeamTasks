@@ -64,7 +64,7 @@ periodo":"teste","admissao":"1000/02/20"
 
 }
 ```
-https://projeto-m4.herokuapp.com/financeiro
+https://projeto-m4.herokuapp.com/financeiro/3
 [
 
 {"id_financeiro":2,
